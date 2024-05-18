@@ -4,7 +4,7 @@ console.clear();
 import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config";
-// import cors from "cors"
+import cors from "cors"
 import userRoutes from "./Routes/userRoutes.js"
 //end
 
@@ -16,7 +16,7 @@ const urlDB = process.env.url_DB;
 
 //midellware 
 app.use(express.json())
-// app.use(cors())
+app.use(cors())
 //end
 
 //connection DB
