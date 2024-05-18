@@ -19,7 +19,7 @@ const userSchema = mongoose.Schema({
     isAdmin :{
         type : String ,
         default:false
-    },
+    }
 }) 
 
 const user = mongoose.model("User",userSchema)
